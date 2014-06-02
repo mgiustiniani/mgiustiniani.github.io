@@ -8,7 +8,7 @@ import tinkerer.paths
 # **************************************************************
 
 # Change this to the name of your blog
-project = 'geekinside.it'
+project = 'mgiustinani.github.io'
 
 # Change this to the tagline of your blog
 tagline = 'An ReST blog'
