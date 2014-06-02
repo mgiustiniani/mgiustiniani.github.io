@@ -23,7 +23,7 @@ author = 'Mario Giustiniani'
 copyright = '2014, ' + author
 
 # Change this to your blog root URL (required for RSS feed)
-website = 'http://www.geekinside.it/'
+website = 'http://mgiustiniani.github.io/'
 
 # **************************************************************
 # More tweaks you can do
