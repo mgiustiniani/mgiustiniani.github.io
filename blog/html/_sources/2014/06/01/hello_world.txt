@@ -5,5 +5,5 @@ Hello World!
 
 .. author:: default
 .. categories:: none
-.. tags:: none
+.. tags:: rest api nginx
 .. comments::
