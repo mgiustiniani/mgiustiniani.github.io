@@ -1,8 +1,8 @@
-title: "Mario Giustiniani — Progetti Open Source"
-description: "Note tecniche sui progetti MIT di Mario Giustiniani: Java, Linux, tooling, AI e sistemi distribuiti."
+title: "Mario Giustiniani — Open Source Projects"
+description: "Technical notes on Mario Giustiniani's MIT-licensed projects: Java, Linux, tooling, AI, and distributed systems."
 url: "https://mgiustiniani.github.io"
 baseurl: ""
-lang: "it"
+lang: "en"
 author:
   name: "Mario Giustiniani"
   github: "mgiustiniani"

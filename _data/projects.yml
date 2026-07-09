@@ -1,85 +1,86 @@
 - slug: javaspec
   name: "JavaSpec"
-  eyebrow: "BDD spec-first per Java"
+  eyebrow: "Specification-first BDD for Java"
   icon: "🧪"
-  status: "Core pubblicato su Maven Central; plugin e adapter separati"
-  summary: "Tool BDD ispirato a phpspec. Definisce specification Java, le esegue da CLI o build tool e genera skeleton/support code quando mancano classi o metodi."
+  status: "Core artifact published on Maven Central; plugins and adapters are separate modules"
+  summary: "A BDD tool inspired by phpspec. It defines and runs Java specifications from the CLI or build tools, and can generate skeleton/support code for missing classes or methods."
   stack: ["Java 8+", "CLI", "Maven", "Gradle", "JUnit Platform"]
   software:
-    - "Core runtime zero-dependency per specification Java"
-    - "CLI `javaspec` per describe/run/generate/report"
-    - "Maven plugin e Gradle plugin"
-    - "JUnit Platform Engine"
-    - "Bytecode agent e bytecode doubles opzionali"
+    - "Zero-runtime-dependency core for Java specifications"
+    - "`javaspec` CLI for describe, run, generate, and report workflows"
+    - "Maven plugin and Gradle plugin"
+    - "JUnit Platform engine"
+    - "Optional bytecode agent and bytecode doubles modules"
   links:
     - label: "GitHub"
       url: "https://github.com/mgiustiniani/javaspec"
 
 - slug: refactorkit
   name: "RefactorKit"
-  eyebrow: "Code intelligence e refactoring deterministico"
+  eyebrow: "Deterministic Java refactoring"
   icon: "🛠️"
-  status: "MVP Java con CLI e integrazioni pianificate"
-  summary: "Motore deterministico per analisi e refactoring Java. L'obiettivo è produrre patch ispezionabili, diagnostica e rollback, con API adatte a CLI, daemon, LSP e MCP."
+  status: "Java MVP with CLI support and planned integration surfaces"
+  summary: "A deterministic engine for Java code intelligence and refactoring. The target is inspectable patches, diagnostics, and rollback, with APIs suitable for CLI, daemon, LSP, and MCP use."
   stack: ["Kotlin/JVM", "Java 8–25", "CLI", "JSON-RPC", "LSP", "MCP"]
   software:
-    - "Libreria Kotlin/JVM adapter-based"
-    - "CLI self-contained con runtime Java embedded"
-    - "Daemon locale JSON-RPC"
-    - "Server LSP per integrazione IDE"
-    - "Server MCP per agenti LLM locali"
+    - "Kotlin/JVM library with language adapters"
+    - "Self-contained CLI package with an embedded Java runtime"
+    - "Local JSON-RPC daemon interface"
+    - "LSP server integration point"
+    - "MCP server integration point for local LLM agents"
   links:
     - label: "GitHub"
       url: "https://github.com/mgiustiniani/refactorkit"
 
 - slug: hexarch
   name: "HexArch"
-  eyebrow: "Architecture-as-code per microservizi esagonali"
+  eyebrow: "Architecture-as-code for hexagonal services"
   icon: "⬡"
-  status: "Tool Java 21 con DSL, validazione e output SVG"
-  summary: "Descrive una singola architettura Hexagonal / Ports & Adapters in un file testuale. Il modello viene validato e renderizzato in SVG con layout deterministico."
+  status: "Java 21 command-line tool with DSL validation and SVG output"
+  summary: "A text DSL for describing one Hexagonal / Ports & Adapters service. The model is parsed, validated, and rendered as deterministic SVG."
   stack: ["Java 21", "ANTLR", "picocli", "SVG", "GraalVM Native Image"]
   software:
-    - "DSL `.hx` per core, porte, adapter, sistemi esterni e flussi"
-    - "Parser ANTLR e validatore semantico"
-    - "Renderer SVG Domain-Driven Hexagon"
-    - "JAR eseguibile"
-    - "Binario nativo Linux x86_64 tramite GraalVM"
+    - "`.hx` DSL for core components, ports, adapters, external systems, and flows"
+    - "ANTLR parser and semantic validator"
+    - "Domain-Driven Hexagon SVG renderer"
+    - "Executable JAR"
+    - "Linux x86_64 native executable via GraalVM"
   links:
     - label: "GitHub"
       url: "https://github.com/mgiustiniani/hexarch"
 
 - slug: synapse-linux
-  name: "Synapse Linux Suite"
-  eyebrow: "CachyOS, hardware control e AI workstation"
+  name: "Synapse Linux"
+  eyebrow: "CachyOS fork and system tooling"
   icon: "⚡"
-  status: "Workspace per pacchetti, repository e control panel Linux"
-  summary: "Insieme di pacchetti Arch/CachyOS e strumenti locali per hardware AMD Strix Halo, monitoraggio, repository pacman e workflow TRELLIS.2 su ROCm."
-  stack: ["Arch/CachyOS", "PKGBUILD", "Tauri", "Rust", "TypeScript", "ROCm"]
+  status: "Linux distribution forked from CachyOS, with related packages and tools"
+  summary: "A CachyOS-based distribution workspace with custom packages, live/ISO work, a pacman repository, hardware-control components, and ROCm/AI workstation tooling."
+  stack: ["Arch/CachyOS", "PKGBUILD", "Pacman", "Tauri", "Rust", "TypeScript", "ROCm"]
   software:
-    - "synapse-ec-su-axb35-linux: modulo/servizi EC, fan control e monitor per AXB35"
-    - "synapse-strixhalo-config: configurazione di sistema per AMD Strix Halo"
-    - "synapse-trellis2-rocm: pacchetto TRELLIS.2 ROCm con helper image-to-3D"
-    - "synapse-structurizr-onpremises: pacchetto Structurizr on-premises"
-    - "Synpase Control Panel: desktop app Tauri per RAM, VRAM, temperature, watt, ventole e temi"
-    - "synapse-pacman-repository: repository pacman e script di build pacchetti"
+    - "Synapse Linux distribution: CachyOS fork with custom package and ISO work"
+    - "synapse-ec-su-axb35-linux: EC module/services, fan control, and AXB35 monitor"
+    - "synapse-strixhalo-config: system configuration for AMD Strix Halo"
+    - "synapse-trellis2-rocm: TRELLIS.2 ROCm package with image-to-3D helper commands"
+    - "synapse-structurizr-onpremises: Structurizr on-premises package"
+    - "Synpase Control Panel: Tauri desktop app for RAM, VRAM, temperatures, wattage, fans, and themes"
+    - "synapse-pacman-repository: pacman repository and package build scripts"
   links:
     - label: "Synapse Linux"
       url: "https://github.com/synapse-linux/synapse-linux.github.io"
 
 - slug: magrathea-oss
   name: "Magrathea OSS"
-  eyebrow: "Piattaforma open source a bounded context"
+  eyebrow: "Storage, PKI, and knowledge-base modules"
   icon: "🌌"
-  status: "Repository Java 21 / Spring Boot 4 Reactive"
-  summary: "Raccolta di moduli backend e documentazione architetturale per object storage S3-compatible, PKI/trust management e knowledge base accessibile da UI, API e agenti."
+  status: "MIT-licensed Java 21 / Spring Boot 4 Reactive project suite"
+  summary: "A set of related backend projects built around bounded contexts and explicit architecture documentation. The current scope covers an S3-compatible object store, a storage engine, PKI/trust-management work, and a knowledge-base system for users and agents."
   stack: ["Java 21", "Spring Boot 4", "WebFlux", "DDD", "BDD", "C4/ARC42"]
   software:
-    - "Magrathea ObjectStore: object store compatibile S3 con Admin API e Storage Engine pluggable"
-    - "Storage Engine: policy, device virtuali, dedup, erasure coding, replication e manifest"
-    - "Magrathea PKI: trust engine per X.509, CVC, SSH, KMS, HSM/TPM e audit"
-    - "Magrathea KB: knowledge base con conversion pipeline, GUI Jekyll, API REST/MCP e LLM Wiki"
-    - "Documentazione architetturale C4, ARC42 e ADR"
+    - "Magrathea ObjectStore: S3-compatible API surface, internal Admin API, and reactive application modules"
+    - "Storage Engine: separate persistence bounded context with storage policies, virtual devices, deduplication, erasure coding, replication, manifests, and filesystem backends"
+    - "Magrathea PKI: planned trust engine for X.509, CVC, SSH, KMS, HSM/TPM custody/attestation profiles, policy, and audit concerns"
+    - "Magrathea KB: document conversion pipeline, Jekyll-based UI, REST/MCP access, and LLM Wiki/Obsidian-compatible output"
+    - "Architecture material: C4 workspaces, ARC42 documentation, ADRs, and executable BDD scenarios where available"
   links:
     - label: "ObjectStore"
       url: "https://github.com/Magrathea-objectstorage/magrathea-objectstorage"

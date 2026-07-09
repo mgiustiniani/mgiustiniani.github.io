@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang | default: 'it' }}">
+<html lang="{{ site.lang | default: 'en' }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,17 +20,17 @@
   </head>
   <body>
     <div class="site-shell">
-      <header class="site-header" aria-label="Intestazione sito">
+      <header class="site-header" aria-label="Site header">
         <a class="brand" href="{{ '/' | relative_url }}" aria-label="Home">
           <span class="brand-mark">MG</span>
           <span>
             <strong>Mario Giustiniani</strong>
-            <small>Progetti MIT</small>
+            <small>MIT projects</small>
           </span>
         </a>
 
-        <nav class="nav" aria-label="Navigazione principale">
-          <a href="#progetti">Progetti</a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#projects">Projects</a>
           <a href="#stack">Stack</a>
           <a href="https://github.com/{{ site.author.github }}">GitHub</a>
         </nav>
@@ -43,7 +43,7 @@
       <footer class="site-footer">
         <div>
           <strong>{{ site.author.name }}</strong>
-          <p>Repository e appunti tecnici su architettura software, tooling Java e Linux.</p>
+          <p>Repositories and technical notes on software architecture, Java tooling, and Linux.</p>
         </div>
         <a class="footer-link" href="https://github.com/{{ site.author.github }}">github.com/{{ site.author.github }}</a>
       </footer>

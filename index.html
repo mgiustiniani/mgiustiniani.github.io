@@ -1,60 +1,60 @@
 ---
 layout: default
-title: "Progetti Open Source"
-description: "Note tecniche sui progetti MIT di Mario Giustiniani: JavaSpec, RefactorKit, HexArch, Synapse Linux Suite e Magrathea OSS."
+title: "Open Source Projects"
+description: "Technical notes on Mario Giustiniani's MIT-licensed projects: JavaSpec, RefactorKit, HexArch, Synapse Linux Suite, and Magrathea OSS."
 ---
 
 <section class="hero">
   <div class="hero-copy">
-    <p class="kicker">Open source MIT · architettura · tooling · Linux</p>
-    <h1>Progetti software aperti, documentati dal punto di vista tecnico.</h1>
+    <p class="kicker">MIT open source · software architecture · tooling · Linux</p>
+    <h1>Technical notes on current open source work.</h1>
     <p class="hero-lead">
-      Questo sito raccoglie i repository e i workspace che sto sviluppando: BDD per Java,
-      refactoring deterministico, architecture-as-code, pacchetti Linux/ROCm e i moduli Magrathea OSS.
+      This site lists repositories and local workspaces I am developing: Java BDD tooling,
+      deterministic refactoring, architecture-as-code, Linux/ROCm packages, and Magrathea OSS modules.
     </p>
     <div class="hero-actions">
-      <a class="button button-primary" href="#progetti">Esplora i progetti</a>
-      <a class="button button-ghost" href="https://github.com/{{ site.author.github }}">Profilo GitHub</a>
+      <a class="button button-primary" href="#projects">View projects</a>
+      <a class="button button-ghost" href="https://github.com/{{ site.author.github }}">GitHub profile</a>
     </div>
   </div>
 
-  <aside class="hero-card" aria-label="Focus engineering">
+  <aside class="hero-card" aria-label="Engineering focus">
     <span class="pulse"></span>
-    <h2>Engineering focus</h2>
+    <h2>Focus</h2>
     <ul>
-      <li>Spec-first development e BDD executable</li>
-      <li>Architetture DDD, Hexagonal, C4 e ARC42</li>
-      <li>Tooling per IDE, CLI e agenti LLM locali</li>
-      <li>Pacchetti Arch/CachyOS, AMD ROCm e controllo hardware</li>
+      <li>Specification-first development and executable BDD</li>
+      <li>DDD, Hexagonal Architecture, C4, and ARC42</li>
+      <li>Tools for IDEs, CLIs, and local LLM agents</li>
+      <li>Arch/CachyOS packages, AMD ROCm, and hardware control</li>
     </ul>
   </aside>
 </section>
 
-<section class="metrics" aria-label="Metriche portfolio">
+<section class="metrics" aria-label="Project summary">
   <article>
     <strong>{{ site.data.projects | size }}</strong>
-    <span>aree di lavoro</span>
+    <span>work areas</span>
   </article>
   <article>
     <strong>Java 21</strong>
-    <span>backend reactive e CLI native-ready</span>
+    <span>reactive backends and command-line tools</span>
   </article>
   <article>
     <strong>Linux</strong>
-    <span>pacchetti, tuning e control panel</span>
+    <span>packages, hardware configuration, and control panels</span>
   </article>
   <article>
     <strong>MIT</strong>
-    <span>licenza permissiva per tutti i progetti elencati</span>
+    <span>permissive license for the listed projects</span>
   </article>
 </section>
 
-<section id="progetti" class="section-heading">
-  <p class="kicker">Repository e workspace</p>
-  <h2>Progetti e software</h2>
+<section id="projects" class="section-heading">
+  <p class="kicker">Repositories and workspaces</p>
+  <h2>Projects and software</h2>
   <p>
-    Le descrizioni sono sintetiche e tecniche: cosa contiene ogni progetto, quali moduli lo compongono
-    e quale problema affronta. Tutti i progetti indicati sono rilasciati con licenza MIT.
+    Short technical descriptions of each project: what it contains, which modules are involved,
+    and which problem it addresses. The listed projects use the MIT license.
   </p>
 </section>
 
@@ -68,7 +68,7 @@ description: "Note tecniche sui progetti MIT di Mario Giustiniani: JavaSpec, Ref
 
     <h3>{{ project.name }}</h3>
     <p class="project-status">{{ project.status }}</p>
-    <p class="license-badge">Licenza MIT</p>
+    <p class="license-badge">MIT License</p>
     <p>{{ project.summary }}</p>
 
     <div class="tag-list" aria-label="Stack {{ project.name }}">
@@ -77,7 +77,7 @@ description: "Note tecniche sui progetti MIT di Mario Giustiniani: JavaSpec, Ref
       {% endfor %}
     </div>
 
-    <h4>Software inclusi</h4>
+    <h4>Included software</h4>
     <ul class="software-list">
       {% for item in project.software %}
       <li>{{ item }}</li>
@@ -85,7 +85,7 @@ description: "Note tecniche sui progetti MIT di Mario Giustiniani: JavaSpec, Ref
     </ul>
 
     {% if project.links %}
-    <div class="project-links" aria-label="Link {{ project.name }}">
+    <div class="project-links" aria-label="Links {{ project.name }}">
       {% for link in project.links %}
       <a href="{{ link.url }}">{{ link.label }}</a>
       {% endfor %}
@@ -97,8 +97,8 @@ description: "Note tecniche sui progetti MIT di Mario Giustiniani: JavaSpec, Ref
 
 <section id="stack" class="stack-section">
   <div>
-    <p class="kicker">Metodo</p>
-    <h2>Un filo comune: software descrivibile, testabile e operabile.</h2>
+    <p class="kicker">Approach</p>
+    <h2>Code, architecture, and tests are kept close together.</h2>
   </div>
   <div class="stack-cloud">
     <span>BDD</span>
@@ -118,7 +118,7 @@ description: "Note tecniche sui progetti MIT di Mario Giustiniani: JavaSpec, Ref
 </section>
 
 <section class="cta">
-  <p class="kicker">Codice aperto</p>
-  <h2>Repository MIT consultabili, riusabili e verificabili dal codice sorgente.</h2>
-  <a class="button button-primary" href="https://github.com/{{ site.author.github }}">Vedi repository GitHub</a>
+  <p class="kicker">Source code</p>
+  <h2>MIT-licensed repositories, described from their source and documentation.</h2>
+  <a class="button button-primary" href="https://github.com/{{ site.author.github }}">View GitHub repositories</a>
 </section>
