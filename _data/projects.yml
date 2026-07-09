@@ -65,8 +65,8 @@
     - "Synpase Control Panel: Tauri desktop app for RAM, VRAM, temperatures, wattage, fans, and themes"
     - "synapse-pacman-repository: pacman repository and package build scripts"
   links:
-    - label: "Synapse Linux"
-      url: "https://github.com/synapse-linux/synapse-linux.github.io"
+    - label: "Synapse Linux website"
+      url: "https://synapse-linux.github.io"
 
 - slug: magrathea-oss
   name: "Magrathea OSS"
