@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'it' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="theme-color" content="#0f172a">
+
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" aria-label="Intestazione sito">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Home">
+          <span class="brand-mark">MG</span>
+          <span>
+            <strong>Mario Giustiniani</strong>
+            <small>Open Source Lab</small>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navigazione principale">
+          <a href="#progetti">Progetti</a>
+          <a href="#stack">Stack</a>
+          <a href="https://github.com/{{ site.author.github }}">GitHub</a>
+        </nav>
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <strong>{{ site.author.name }}</strong>
+          <p>Software architecture, developer tooling, Linux workstation engineering e piattaforme OSS.</p>
+        </div>
+        <a class="footer-link" href="https://github.com/{{ site.author.github }}">github.com/{{ site.author.github }}</a>
+      </footer>
+    </div>
+  </body>
+</html>

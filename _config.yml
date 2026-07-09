@@ -1,0 +1,20 @@
+title: "Mario Giustiniani — Open Source Lab"
+description: "Progetti open source, architetture software e tooling per Java, Linux, AI e sistemi distribuiti."
+url: "https://mgiustiniani.github.io"
+baseurl: ""
+lang: "it"
+author:
+  name: "Mario Giustiniani"
+  github: "mgiustiniani"
+
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+exclude:
+  - conf.py
+  - master.rst
+  - pages
+  - _templates
+  - blog
+  - 2014

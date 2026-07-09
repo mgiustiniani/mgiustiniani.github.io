@@ -1,8 +1,123 @@
-<!doctype html>
-<html>
-    <head>
-        <meta http-equiv="REFRESH" content="0; url=./blog/html/index.html" />
-        <title></title>
-    </head>
-    <body></body>
-</html>
+---
+layout: default
+title: "Open Source Lab"
+description: "Portfolio dei progetti open source di Mario Giustiniani: JavaSpec, RefactorKit, HexArch, Synapse Linux Suite e Magrathea OSS."
+---
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="kicker">Open source · architettura · tooling · Linux</p>
+    <h1>Costruisco strumenti per sviluppatori, piattaforme modulari e sistemi Linux ad alte prestazioni.</h1>
+    <p class="hero-lead">
+      Questo sito raccoglie i progetti che sto portando avanti tra GitHub e workspace locali:
+      BDD per Java, refactoring deterministico, architecture-as-code, workstation Linux/ROCm e la piattaforma Magrathea OSS.
+    </p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="#progetti">Esplora i progetti</a>
+      <a class="button button-ghost" href="https://github.com/{{ site.author.github }}">Profilo GitHub</a>
+    </div>
+  </div>
+
+  <aside class="hero-card" aria-label="Focus engineering">
+    <span class="pulse"></span>
+    <h2>Engineering focus</h2>
+    <ul>
+      <li>Spec-first development e BDD executable</li>
+      <li>Architetture DDD, Hexagonal, C4 e ARC42</li>
+      <li>Tooling per agenti LLM locali e IDE</li>
+      <li>Linux workstation, AMD ROCm e pacchetti Arch/CachyOS</li>
+    </ul>
+  </aside>
+</section>
+
+<section class="metrics" aria-label="Metriche portfolio">
+  <article>
+    <strong>{{ site.data.projects | size }}</strong>
+    <span>linee progetto</span>
+  </article>
+  <article>
+    <strong>Java 21</strong>
+    <span>backend reactive e CLI native-ready</span>
+  </article>
+  <article>
+    <strong>Linux</strong>
+    <span>pacchetti, tuning e control panel</span>
+  </article>
+  <article>
+    <strong>AI-ready</strong>
+    <span>MCP, LLM Wiki, ROCm workflow</span>
+  </article>
+</section>
+
+<section id="progetti" class="section-heading">
+  <p class="kicker">Portfolio attivo</p>
+  <h2>Progetti e software</h2>
+  <p>
+    Ogni progetto nasce con un obiettivo preciso: rendere il codice più verificabile, l'architettura più visibile
+    e l'infrastruttura più automatizzabile.
+  </p>
+</section>
+
+<div class="project-grid">
+  {% for project in site.data.projects %}
+  <article class="project-card" id="{{ project.slug }}">
+    <div class="project-topline">
+      <span class="project-icon">{{ project.icon }}</span>
+      <span class="project-eyebrow">{{ project.eyebrow }}</span>
+    </div>
+
+    <h3>{{ project.name }}</h3>
+    <p class="project-status">{{ project.status }}</p>
+    <p>{{ project.summary }}</p>
+
+    <div class="tag-list" aria-label="Stack {{ project.name }}">
+      {% for item in project.stack %}
+      <span>{{ item }}</span>
+      {% endfor %}
+    </div>
+
+    <h4>Software inclusi</h4>
+    <ul class="software-list">
+      {% for item in project.software %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+
+    {% if project.links %}
+    <div class="project-links" aria-label="Link {{ project.name }}">
+      {% for link in project.links %}
+      <a href="{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </article>
+  {% endfor %}
+</div>
+
+<section id="stack" class="stack-section">
+  <div>
+    <p class="kicker">Metodo</p>
+    <h2>Un filo comune: software descrivibile, testabile e operabile.</h2>
+  </div>
+  <div class="stack-cloud">
+    <span>BDD</span>
+    <span>DDD</span>
+    <span>Hexagonal Architecture</span>
+    <span>C4 Model</span>
+    <span>ARC42</span>
+    <span>Java</span>
+    <span>Kotlin</span>
+    <span>Spring WebFlux</span>
+    <span>Rust</span>
+    <span>TypeScript</span>
+    <span>ROCm</span>
+    <span>Arch Linux</span>
+    <span>MCP</span>
+  </div>
+</section>
+
+<section class="cta">
+  <p class="kicker">Let's build</p>
+  <h2>Dal DSL al runtime: progetti pensati per essere usati, estesi e documentati.</h2>
+  <a class="button button-primary" href="https://github.com/{{ site.author.github }}">Vedi repository GitHub</a>
+</section>

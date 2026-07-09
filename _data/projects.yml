@@ -1,0 +1,89 @@
+- slug: javaspec
+  name: "JavaSpec"
+  eyebrow: "BDD spec-first per Java"
+  icon: "🧪"
+  status: "Core pubblicato su Maven Central, ecosistema plugin in evoluzione"
+  summary: "Un tool BDD ispirato a phpspec: descrivi il comportamento, esegui la specification e lasci che JavaSpec guidi il prossimo passo di produzione."
+  stack: ["Java 8+", "CLI", "Maven", "Gradle", "JUnit Platform"]
+  software:
+    - "Core runtime zero-dependency per specification Java"
+    - "CLI `javaspec` per describe/run/generate/report"
+    - "Maven plugin e Gradle plugin"
+    - "JUnit Platform Engine"
+    - "Bytecode agent e bytecode doubles opzionali"
+  links:
+    - label: "GitHub"
+      url: "https://github.com/mgiustiniani/javaspec"
+
+- slug: refactorkit
+  name: "RefactorKit"
+  eyebrow: "Code intelligence e refactoring deterministico"
+  icon: "🛠️"
+  status: "MVP focalizzato su Java e trasformazioni sicure"
+  summary: "Motore per refactoring previewable, rollbackable e ripetibili, pensato per essere usato da sviluppatori, IDE e agenti locali."
+  stack: ["Kotlin/JVM", "Java 8–25", "CLI", "JSON-RPC", "LSP", "MCP"]
+  software:
+    - "Libreria Kotlin/JVM adapter-based"
+    - "CLI self-contained con runtime Java embedded"
+    - "Daemon locale JSON-RPC"
+    - "Server LSP per integrazione IDE"
+    - "Server MCP per agenti LLM locali"
+  links:
+    - label: "GitHub"
+      url: "https://github.com/mgiustiniani/refactorkit"
+
+- slug: hexarch
+  name: "HexArch"
+  eyebrow: "Architecture-as-code per microservizi esagonali"
+  icon: "⬡"
+  status: "Tool Java 21 con DSL, validatore e renderer SVG"
+  summary: "Descrive una singola architettura Hexagonal / Ports & Adapters come codice e genera diagrammi SVG deterministici versionabili."
+  stack: ["Java 21", "ANTLR", "picocli", "SVG", "GraalVM Native Image"]
+  software:
+    - "DSL `.hx` per core, porte, adapter, sistemi esterni e flussi"
+    - "Parser ANTLR e validatore semantico"
+    - "Renderer SVG Domain-Driven Hexagon"
+    - "JAR eseguibile"
+    - "Binario nativo Linux x86_64 tramite GraalVM"
+  links:
+    - label: "GitHub"
+      url: "https://github.com/mgiustiniani/hexarch"
+
+- slug: synapse-linux
+  name: "Synapse Linux Suite"
+  eyebrow: "CachyOS, hardware control e AI workstation"
+  icon: "⚡"
+  status: "Suite workspace per pacchetti, repository e control panel Linux"
+  summary: "Una famiglia di pacchetti e strumenti per workstation Linux/AMD Strix Halo: tuning hardware, monitoraggio, repository pacman e workflow AI/ROCm."
+  stack: ["Arch/CachyOS", "PKGBUILD", "Tauri", "Rust", "TypeScript", "ROCm"]
+  software:
+    - "synapse-ec-su-axb35-linux: modulo/servizi EC, fan control e monitor per AXB35"
+    - "synapse-strixhalo-config: configurazione di sistema per AMD Strix Halo"
+    - "synapse-trellis2-rocm: pacchetto TRELLIS.2 ROCm con helper image-to-3D"
+    - "synapse-structurizr-onpremises: pacchetto Structurizr on-premises"
+    - "Synpase Control Panel: desktop app Tauri per RAM, VRAM, temperature, watt, ventole e temi"
+    - "synapse-pacman-repository: repository pacman e script di build pacchetti"
+  links:
+    - label: "Synapse Linux"
+      url: "https://github.com/synapse-linux/synapse-linux.github.io"
+
+- slug: magrathea-oss
+  name: "Magrathea OSS"
+  eyebrow: "Piattaforma open source a bounded context"
+  icon: "🌌"
+  status: "Linee prodotto Java 21 / Spring Boot 4 Reactive"
+  summary: "Un ecosistema modulare per storage S3-compatible, PKI/trust management e knowledge base per persone e agenti AI."
+  stack: ["Java 21", "Spring Boot 4", "WebFlux", "DDD", "BDD", "C4/ARC42"]
+  software:
+    - "Magrathea ObjectStore: object store compatibile S3 con Admin API e Storage Engine pluggable"
+    - "Storage Engine: policy, device virtuali, dedup, erasure coding, replication e manifest"
+    - "Magrathea PKI: trust engine per X.509, CVC, SSH, KMS, HSM/TPM e audit"
+    - "Magrathea KB: knowledge base con conversion pipeline, GUI Jekyll, API REST/MCP e LLM Wiki"
+    - "Documentazione architetturale C4, ARC42 e ADR"
+  links:
+    - label: "ObjectStore"
+      url: "https://github.com/Magrathea-objectstorage/magrathea-objectstorage"
+    - label: "PKI"
+      url: "https://github.com/Magrathea-oss/magrathea-pki"
+    - label: "Knowledge Base"
+      url: "https://github.com/Magrathea-oss/magrathea-kb"
