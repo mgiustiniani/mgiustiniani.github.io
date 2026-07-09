@@ -70,17 +70,16 @@
 
 - slug: magrathea-oss
   name: "Magrathea OSS"
-  eyebrow: "Storage, PKI, and knowledge-base modules"
+  eyebrow: "Three Magrathea backend projects"
   icon: "🌌"
-  status: "MIT-licensed Java 21 / Spring Boot 4 Reactive project suite"
-  summary: "A set of related backend projects built around bounded contexts and explicit architecture documentation. The current scope covers an S3-compatible object store, a storage engine, PKI/trust-management work, and a knowledge-base system for users and agents."
+  status: "MIT-licensed Java 21 / Spring Boot 4 Reactive project family"
+  summary: "Magrathea is organized as three related projects: ObjectStore for S3-compatible storage, PKI for trust and certificate services, and KB for converting documents into a browsable and agent-accessible knowledge base. Each project is described with explicit bounded contexts, architecture documentation, and BDD scenarios where available."
   stack: ["Java 21", "Spring Boot 4", "WebFlux", "DDD", "BDD", "C4/ARC42"]
   software:
-    - "Magrathea ObjectStore: S3-compatible API surface, internal Admin API, and reactive application modules"
-    - "Storage Engine: separate persistence bounded context with storage policies, virtual devices, deduplication, erasure coding, replication, manifests, and filesystem backends"
-    - "Magrathea PKI: planned trust engine for X.509, CVC, SSH, KMS, HSM/TPM custody/attestation profiles, policy, and audit concerns"
-    - "Magrathea KB: document conversion pipeline, Jekyll-based UI, REST/MCP access, and LLM Wiki/Obsidian-compatible output"
-    - "Architecture material: C4 workspaces, ARC42 documentation, ADRs, and executable BDD scenarios where available"
+    - "Magrathea ObjectStore: an S3-compatible object-storage service with a public S3 API, an internal Admin API, and reactive application modules. Its storage-engine context covers policies, virtual devices, deduplication, erasure coding, replication, manifests, and filesystem backends."
+    - "Magrathea PKI: a trust-services project for X.509, CVC, SSH, KMS, HSM/TPM custody and attestation profiles, policy enforcement, and audit concerns."
+    - "Magrathea KB: a knowledge-base project that converts documents into structured content, publishes a Jekyll-based UI, exposes REST/MCP access, and can produce LLM Wiki / Obsidian-compatible output."
+    - "Shared architecture material: C4 workspaces, ARC42 documentation, ADRs, and executable BDD scenarios where available."
   links:
     - label: "ObjectStore"
       url: "https://github.com/Magrathea-objectstorage/magrathea-objectstorage"
