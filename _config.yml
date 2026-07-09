@@ -12,9 +12,4 @@ highlighter: rouge
 permalink: pretty
 
 exclude:
-  - conf.py
-  - master.rst
-  - pages
-  - _templates
-  - blog
-  - 2014
+  - README.md
