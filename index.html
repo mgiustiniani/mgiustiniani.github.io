@@ -1,16 +1,16 @@
 ---
 layout: default
-title: "Open Source Lab"
-description: "Portfolio dei progetti open source di Mario Giustiniani: JavaSpec, RefactorKit, HexArch, Synapse Linux Suite e Magrathea OSS."
+title: "Progetti Open Source"
+description: "Note tecniche sui progetti MIT di Mario Giustiniani: JavaSpec, RefactorKit, HexArch, Synapse Linux Suite e Magrathea OSS."
 ---
 
 <section class="hero">
   <div class="hero-copy">
-    <p class="kicker">Open source · architettura · tooling · Linux</p>
-    <h1>Costruisco strumenti per sviluppatori, piattaforme modulari e sistemi Linux ad alte prestazioni.</h1>
+    <p class="kicker">Open source MIT · architettura · tooling · Linux</p>
+    <h1>Progetti software aperti, documentati dal punto di vista tecnico.</h1>
     <p class="hero-lead">
-      Questo sito raccoglie i progetti che sto portando avanti tra GitHub e workspace locali:
-      BDD per Java, refactoring deterministico, architecture-as-code, workstation Linux/ROCm e la piattaforma Magrathea OSS.
+      Questo sito raccoglie i repository e i workspace che sto sviluppando: BDD per Java,
+      refactoring deterministico, architecture-as-code, pacchetti Linux/ROCm e i moduli Magrathea OSS.
     </p>
     <div class="hero-actions">
       <a class="button button-primary" href="#progetti">Esplora i progetti</a>
@@ -24,8 +24,8 @@ description: "Portfolio dei progetti open source di Mario Giustiniani: JavaSpec,
     <ul>
       <li>Spec-first development e BDD executable</li>
       <li>Architetture DDD, Hexagonal, C4 e ARC42</li>
-      <li>Tooling per agenti LLM locali e IDE</li>
-      <li>Linux workstation, AMD ROCm e pacchetti Arch/CachyOS</li>
+      <li>Tooling per IDE, CLI e agenti LLM locali</li>
+      <li>Pacchetti Arch/CachyOS, AMD ROCm e controllo hardware</li>
     </ul>
   </aside>
 </section>
@@ -33,7 +33,7 @@ description: "Portfolio dei progetti open source di Mario Giustiniani: JavaSpec,
 <section class="metrics" aria-label="Metriche portfolio">
   <article>
     <strong>{{ site.data.projects | size }}</strong>
-    <span>linee progetto</span>
+    <span>aree di lavoro</span>
   </article>
   <article>
     <strong>Java 21</strong>
@@ -44,17 +44,17 @@ description: "Portfolio dei progetti open source di Mario Giustiniani: JavaSpec,
     <span>pacchetti, tuning e control panel</span>
   </article>
   <article>
-    <strong>AI-ready</strong>
-    <span>MCP, LLM Wiki, ROCm workflow</span>
+    <strong>MIT</strong>
+    <span>licenza permissiva per tutti i progetti elencati</span>
   </article>
 </section>
 
 <section id="progetti" class="section-heading">
-  <p class="kicker">Portfolio attivo</p>
+  <p class="kicker">Repository e workspace</p>
   <h2>Progetti e software</h2>
   <p>
-    Ogni progetto nasce con un obiettivo preciso: rendere il codice più verificabile, l'architettura più visibile
-    e l'infrastruttura più automatizzabile.
+    Le descrizioni sono sintetiche e tecniche: cosa contiene ogni progetto, quali moduli lo compongono
+    e quale problema affronta. Tutti i progetti indicati sono rilasciati con licenza MIT.
   </p>
 </section>
 
@@ -68,6 +68,7 @@ description: "Portfolio dei progetti open source di Mario Giustiniani: JavaSpec,
 
     <h3>{{ project.name }}</h3>
     <p class="project-status">{{ project.status }}</p>
+    <p class="license-badge">Licenza MIT</p>
     <p>{{ project.summary }}</p>
 
     <div class="tag-list" aria-label="Stack {{ project.name }}">
@@ -117,7 +118,7 @@ description: "Portfolio dei progetti open source di Mario Giustiniani: JavaSpec,
 </section>
 
 <section class="cta">
-  <p class="kicker">Let's build</p>
-  <h2>Dal DSL al runtime: progetti pensati per essere usati, estesi e documentati.</h2>
+  <p class="kicker">Codice aperto</p>
+  <h2>Repository MIT consultabili, riusabili e verificabili dal codice sorgente.</h2>
   <a class="button button-primary" href="https://github.com/{{ site.author.github }}">Vedi repository GitHub</a>
 </section>
